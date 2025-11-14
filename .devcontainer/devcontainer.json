@@ -16,7 +16,7 @@
         "version": "lts"
       }
     },
-    "postAttachCommand": "./scripts/welcome.sh",
+    // "postAttachCommand": "./scripts/welcome.sh",
     "forwardPorts": [1313],
     
     "customizations": {
