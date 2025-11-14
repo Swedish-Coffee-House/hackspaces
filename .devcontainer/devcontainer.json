@@ -1,6 +1,6 @@
 {
     "hostRequirements": {
-     "cpus": 32
+     "cpus": 24
     },
     "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "features": {
