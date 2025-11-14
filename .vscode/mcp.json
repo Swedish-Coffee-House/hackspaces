@@ -6,7 +6,12 @@
     },
     "playwright": {
       "command": "npx",
-      "args": ["-y", "@microsoft/mcp-server-playwright"]
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "env": {
+      "HEADLESS": "false"
+      }
     },
     "memory": { 
       "command": "npx",
