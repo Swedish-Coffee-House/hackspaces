@@ -1,10 +1,13 @@
 {
+    "name": "CTF Hacking Environment",
     "hostRequirements": {
         "cpus": 16,
         "memory": "64gb",
         "storage": "128gb"
     },
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
     "features": {
       "ghcr.io/devcontainers/features/go:1": {},
       "ghcr.io/devcontainers/features/hugo:1.1.3": {
@@ -16,8 +19,8 @@
         "version": "lts"
       }
     },
-    // "postAttachCommand": "./scripts/welcome.sh",
-    "forwardPorts": [1313],
+    "postCreateCommand": "welcome.sh",
+    "forwardPorts": [1313, 8080, 8000, 5000, 3000],
     
     "customizations": {
       "vscode": {
